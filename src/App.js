@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
+import Cards from './components/Cards/Cards.jsx';
+import Nav from './components/Nav/Nav.jsx';
+import React from 'react';
+import {useState} from 'react';
 
-function App() {
+const example = {
+   name: 'Morty Smith',
+   species: 'Human',
+   gender: 'Male',
+   image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
+};
+
+
+function App () {
+
+  const [characters, setCharacters] = useState([]);
+
+  const onSearch = function (e) {
+    const newCharacter = example;
+    setCharacters([...characters, newCharacter ])
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+        <Nav onSearch={onSearch}/>
+        <Cards characters={characters}/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

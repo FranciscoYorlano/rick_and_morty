@@ -1,0 +1,6 @@
+.app {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,83,1) 35%, rgba(110,28,99,1) 41%, rgba(91,59,125,1) 51%, rgba(87,65,130,1) 53%, rgba(50,128,183,1) 73%, rgba(0,212,255,1) 100%);
+    min-height: 100vh;
+}
+
