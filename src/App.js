@@ -12,16 +12,18 @@ function App () {
 
   // App Ons
   const onSearch = function (id) {
+
+    if (!id) id = Math.floor(Math.random() * 826) + 1;
+
     fetch(`https://rickandmortyapi.com/api/character/${id}`)
       .then((response) => response.json())
       .then((data) => {
          if (data.name) {
-            const exist = characters.some( (character) => character.id === Number(id));
-            console.log(exist);
-            if (exist) {
+            if (characters.some( (character) => character.id === Number(id))) {
               window.alert(`Ya se encuentra el personaje ${data.name}`)
             }else {
-              setCharacters([...characters, data ])
+              setCharacters((oldChars) => [...oldChars, data]); // No se toca el estado
+              // setCharacters([...characters, data ])
             }
          } else {
             window.alert('No hay personajes con ese ID');
@@ -30,7 +32,7 @@ function App () {
   }
 
   const onClose = function (id) {
-    const updatedCharacters = characters.filter( (character) => character.id !== id);
+    const updatedCharacters = characters.filter( (character) => character.id !== Number(id));
     setCharacters(updatedCharacters);
   }
 

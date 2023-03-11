@@ -24,7 +24,7 @@ export default function SearchBar(props) {
                    onChange={handleSearchCharacter}
                    value={searchedId} 
                    className={styles.searchInput} 
-                   placeholder="Type card id"/>
+                   placeholder="Type card id (or random)"/>
             <button className={styles.searchButton} type="submit">
                Agregar
             </button>
