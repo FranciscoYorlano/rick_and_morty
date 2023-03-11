@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    color: #fff;
+    background-color: #000;
     border: 2px solid #A933FF;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -19,6 +20,9 @@
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
+    border: 2px solid #A933FF;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
   
 .cardName {

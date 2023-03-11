@@ -1,10 +1,11 @@
 .searchContainer {
     display: flex;
     align-items: center;
-    border: 2px solid #fff;
+    border: 2px solid #A933FF;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     margin: 10px;
+    background-color: #000;
 }
 
 .searchInput {
