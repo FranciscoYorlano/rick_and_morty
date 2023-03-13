@@ -4,7 +4,7 @@
     align-items: center;
     color: #fff;
     background-color: #000;
-    border: 2px solid #A933FF;
+    border: 2px solid #a933ff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     margin: 10px;
@@ -14,23 +14,22 @@
     margin: auto;
 }
 
-
 .cardImage {
     width: 200px;
     height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
-    border: 2px solid #A933FF;
+    border: 2px solid #a933ff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-  
+
 .cardName {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 5px;
 }
-  
+
 .cardDescription {
     font-size: 1rem;
     text-align: center;

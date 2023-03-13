@@ -1,7 +1,7 @@
 .searchContainer {
     display: flex;
     align-items: center;
-    border: 2px solid #A933FF;
+    border: 2px solid #a933ff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     margin: 10px;
@@ -21,19 +21,15 @@
     border: 2px solid #fff;
     outline: none;
     background-color: #fff;
-    color: #A933FF;
+    color: #a933ff;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-  }
-  
+}
+
 .searchButton:hover {
-    background-color: #A933FF;
+    background-color: #a933ff;
     color: #fff;
 }
-  
-  
-  
-  
