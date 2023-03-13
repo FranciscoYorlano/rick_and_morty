@@ -6,6 +6,7 @@ import Cards from "./components/Cards/Cards.jsx";
 import Nav from "./components/Nav/Nav.jsx";
 import About from "./components/About/About.jsx";
 import Detail from "./components/Detail/Detail.jsx";
+import NotFound from "./components/NotFound/NotFound.jsx";
 
 function App() {
     // App State
@@ -58,6 +59,7 @@ function App() {
                 />
                 <Route path="/about" element={<About />} />
                 <Route path="detail/:detailId" element={<Detail />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </div>
     );
